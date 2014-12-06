@@ -1,0 +1,33 @@
+﻿body { background-color:royalblue; font-size:14px; padding-top:15px;
+
+}
+
+h1 {font-size: 26px;}
+
+h2 {font-size: 22px;}
+
+h3 {font-size: 18px;}
+
+.header { background-color:ghostwhite; padding-top:15px; text-align:center; border-bottom:2px solid black;
+}
+
+.container {
+    width: 801px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.main-right { background-color:ghostwhite; color:black;  padding-top:20px;
+           padding-right:8px; padding-bottom:5px; float:right; width:426px; text-align:left;
+          }
+
+.main-left { font-size:18px; text-align:center; background-color:ghostwhite; color:black;
+          float:left; padding:25px; width:317px;  padding-top:169px; padding-bottom:150px;
+          }
+
+.main { background-color:ghostwhite; padding-top:15px; 
+}
+
+.footer { clear:both; background-color:lightgreen; margin-top:45px; 
+          padding:20px;
+      }
