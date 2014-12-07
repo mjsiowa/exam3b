@@ -11,52 +11,80 @@
     <form id="form1" runat="server">
     <div>
         <div class="container">
+
         <div class="header">
             <h1>Welcome to MSCI:3300</h1>
+
 <h2>Software Design and Development</h2>
         </div>
 
-            <div class="main-left">
+       <div class="main">
+           <p></p>
+      <table width="80%">   
+          <tr> 
+              <td width="40%">
+Please choose your language:<br />
+                <asp:DropDownList ID="DropDownList1" runat="server">
+                    <asp:ListItem>Arabic</asp:ListItem>
+                    <asp:ListItem>Chinese</asp:ListItem>
+                    <asp:ListItem>English</asp:ListItem>
+                    <asp:ListItem>Spanish</asp:ListItem>
 
-               
-Please choose your language:
 
 
-                        </div>
-<div class="main-right">
-      
-<% If Not IsPostBack Then%>
+                </asp:DropDownList>
 
+                     </td>
+              <td width="60%">
 
-    
+     
+    <asp:Label ID="Label1" runat="server" Text=" My Name is:"></asp:Label><asp:TextBox ID="tb_name" runat="server"></asp:TextBox><p></p>
 
-     My Name is: <asp:TextBox ID="tb_name" runat="server"></asp:TextBox><p></p>
-
-    I am: <asp:RadioButton ID="Female" runat="server" Text="Female" /><asp:RadioButton ID="Male" runat="server" Text="Male"  />
+     
+    <asp:Label ID="Label2" runat="server" Text="I am:"></asp:Label><asp:RadioButton ID="Female" runat="server" Text="Female" /><asp:RadioButton ID="Male" runat="server" Text="Male"  />
     <p></p>
 
-    I plan to Graduate on:<br />
+    
+    <asp:Label ID="Label3" runat="server" Text="I plan to Graduate on:"></asp:Label><br />
     <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
     <p></p>
 
-    When I graduate I hope to earn: $ <asp:TextBox ID="tb_salary" runat="server"></asp:TextBox>
+    
+    <asp:Label ID="Label4" runat="server" Text="When I graduate I hope to earn: $ "></asp:Label><asp:TextBox ID="tb_salary" runat="server"></asp:TextBox>
     <p></p>
     <asp:Button ID="Submit" runat="server" Text="Submit" />
 
+<p></p>
+   
+    <asp:Label ID="Label5" runat="server" Text="Hello, {Mr. or Ms.}"></asp:Label>
+    <asp:Label ID="lbl_name" runat="server" Text=""></asp:Label>
+    <p></p>
+    <asp:Label ID="Label6" runat="server" Text="I hope you have a great day when
+you graduate on"></asp:Label>
+    <asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>
+    <p></p>
+    <asp:Label ID="Label7" runat="server" Text="I wish you well in your career after
+graduation.  I hope you earn "></asp:Label>
+    <asp:Label ID="lbl_money" runat="server" Text=""></asp:Label>
+    <asp:Label ID="Label8" runat="server" Text=" as a salary in your first job!"></asp:Label>
 
-        <%Else%>
+<p></p>
+    <asp:Label ID="Label9" runat="server" Text="Please visit me on "></asp:Label>
+    <asp:HyperLink ID="HyperLink1" runat="server">Github</asp:HyperLink>
 
 
-        <div>
 
-            <div class="footer">
+    <p></p>
+    </td>
+    </tr>  
+            </table>   
+     
 
+   </div>
+    
             </div>
-                                   
         </div>
-    </div>
-            </div>
-        </div>
+       
     </form>
 </body>
 </html>
