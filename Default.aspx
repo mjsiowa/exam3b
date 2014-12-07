@@ -37,11 +37,12 @@ Please choose your language:<br />
                      </td>
               <td width="60%">
 
-     
-    <asp:Label ID="Label1" runat="server" Text=" My Name is:"></asp:Label><asp:TextBox ID="tb_name" runat="server"></asp:TextBox><p></p>
+                  <asp:Panel ID="questions_panel" runat="server">
+    <asp:Label ID="Label1" runat="server" Text=" My Name is: "></asp:Label><asp:TextBox ID="tb_name" runat="server"></asp:TextBox><p></p>
 
      
-    <asp:Label ID="Label2" runat="server" Text="I am:"></asp:Label><asp:RadioButton ID="Female" runat="server" Text="Female" /><asp:RadioButton ID="Male" runat="server" Text="Male"  />
+    <asp:Label ID="Label2" runat="server" Text="I am:"></asp:Label><asp:RadioButton ID="Female" runat="server" Text="Female" GroupName="gender" /><asp:RadioButton ID="Male" runat="server" Text="Male" GroupName="gender"  />
+                    
     <p></p>
 
     
@@ -50,13 +51,17 @@ Please choose your language:<br />
     <p></p>
 
     
-    <asp:Label ID="Label4" runat="server" Text="When I graduate I hope to earn: $ "></asp:Label><asp:TextBox ID="tb_salary" runat="server"></asp:TextBox>
+    <asp:Label ID="Label4" runat="server" Text="When I graduate I hope to earn: $ "></asp:Label><asp:TextBox ID="tb_salary" runat="server" Width="65px"></asp:TextBox>
     <p></p>
     <asp:Button ID="Submit" runat="server" Text="Submit" />
 
+                      </asp:Panel>
+
 <p></p>
+                  <asp:Panel ID="answers_panel" runat="server" Visible="false">
    
-    <asp:Label ID="Label5" runat="server" Text="Hello, {Mr. or Ms.}"></asp:Label>
+    <asp:Label ID="Label5" runat="server" Text="Hello, "></asp:Label>
+    <asp:Label ID="lbl_gender" runat="server" Text="Label"></asp:Label>
     <asp:Label ID="lbl_name" runat="server" Text=""></asp:Label>
     <p></p>
     <asp:Label ID="Label6" runat="server" Text="I hope you have a great day when
@@ -70,10 +75,10 @@ graduation.  I hope you earn "></asp:Label>
 
 <p></p>
     <asp:Label ID="Label9" runat="server" Text="Please visit me on "></asp:Label>
-    <asp:HyperLink ID="HyperLink1" runat="server">Github</asp:HyperLink>
+    <asp:HyperLink ID="github_link" runat="server" NavigateUrl="https://github.com/mjsiowa" Target="_blank">Github</asp:HyperLink>
 
 
-
+</asp:Panel>
     <p></p>
     </td>
     </tr>  
