@@ -13,6 +13,7 @@ Partial Class _Default
 
             Thread.CurrentThread.CurrentUICulture = New CultureInfo(lang)
             Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(lang)
+
         End If
 
     End Sub
@@ -37,9 +38,6 @@ Partial Class _Default
         questions_panel.Visible = False
         answers_panel.Visible = True
 
-
-
-
     End Sub
 
     Protected Sub Lang_dd_Load(sender As Object, e As EventArgs) Handles Lang_dd.Load
@@ -50,5 +48,10 @@ Partial Class _Default
     End Sub
 
 
+
     
+    Protected Sub Lang_dd_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Lang_dd.SelectedIndexChanged
+        Dim money As Decimal = CDec(tb_salary.Text)
+        lbl_money.Text = String.Format("{0:c}", money)
+    End Sub
 End Class
