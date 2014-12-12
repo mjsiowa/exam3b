@@ -29,7 +29,7 @@
 <br />
                 <asp:DropDownList ID="Lang_dd" runat="server" AutoPostBack="true">
                    
-                    <asp:ListItem Value="ar-EG">Arabic (Egypt)</asp:ListItem>
+                    <asp:ListItem Value="ar-SA">Arabic (Saudi Arabia)</asp:ListItem>
                     <asp:ListItem Value="zh-CN">Chinese (China)</asp:ListItem>
                     <asp:ListItem Value="en-US">English (US)</asp:ListItem>
                     <asp:ListItem Value="es-ES">Spanish (Spain)</asp:ListItem>
@@ -38,6 +38,10 @@
 
                 </asp:DropDownList>
 
+                   <p></p>
+                  <asp:Image ID="Image1" runat="server" Height="125px" ImageUrl="<%$ Resources:Resource, Flag %>" />
+                  <p></p>
+                  <p></p>
                      </td>
               <td width="60%">
 
@@ -57,7 +61,7 @@
     <p></p>
 
     
-    <asp:Label ID="lbl_earn" runat="server" Text="<%$ Resources:Resource, earn %>"></asp:Label><asp:TextBox ID="tb_salary" runat="server" Width="65px"></asp:TextBox>
+    <asp:Label ID="lbl_earn" runat="server" Text="<%$ Resources:Resource, earn %>"></asp:Label><asp:TextBox ID="tb_salary" runat="server" Width="65px">0</asp:TextBox>
     <p></p>
     <asp:Button ID="Submit" runat="server" Text="<%$ Resources:Resource, Submit %>" />
 

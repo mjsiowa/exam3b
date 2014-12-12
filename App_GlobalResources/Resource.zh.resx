@@ -168,4 +168,7 @@
   <data name="wish" xml:space="preserve">
     <value>Zhù nǐ shùnlì bìyè hòu, nǐ de zhíyè shēngyá. Wǒ xīwàng nǐ zhuàn</value>
   </data>
+  <data name="flag" xml:space="preserve">
+    <value>~/pics/china.jpg</value>
+  </data>
 </root>

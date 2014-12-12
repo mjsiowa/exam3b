@@ -168,4 +168,7 @@
   <data name="wish" xml:space="preserve">
     <value>Le deseo lo mejor en su carrera después de la graduación . Espero que gane</value>
   </data>
+  <data name="flag" xml:space="preserve">
+    <value>~/pics/spain.jpg</value>
+  </data>
 </root>

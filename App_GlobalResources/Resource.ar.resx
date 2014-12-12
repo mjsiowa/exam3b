@@ -168,4 +168,7 @@
   <data name="wish" xml:space="preserve">
     <value>أتمنى لكم التوفيق في حياتك المهنية بعد التخرج. آمل أن تكسب</value>
   </data>
+  <data name="flag" xml:space="preserve">
+    <value>~/pics/saudi.gif</value>
+  </data>
 </root>
